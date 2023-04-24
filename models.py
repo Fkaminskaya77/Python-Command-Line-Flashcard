@@ -1,5 +1,5 @@
 from peewee import *
-import IPython
+# import IPython
 
 # Create DB connection
 db = PostgresqlDatabase(
@@ -12,6 +12,7 @@ port=5432
 
 db.connect()
 
+#models
 class BaseModel(Model):
     class Meta:
         database = db
@@ -19,5 +20,12 @@ class BaseModel(Model):
 class FlashCard(BaseModel):
     russian_word = CharField()
     english_word= CharField()
-    
-IPython.embed()
+
+# Creating Tables for database
+db.create_tables([FlashCard])
+
+# Seed the database with data
+card1 = FlashCard(russian_word = 'да (da)', english_word = 'yes')
+card1.save()
+
+# IPython.embed()
