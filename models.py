@@ -21,11 +21,4 @@ class FlashCard(BaseModel):
     russian_word = CharField()
     english_word= CharField()
 
-# Creating Tables for database
-db.create_tables([FlashCard])
-
-# Seed the database with data
-card1 = FlashCard(russian_word = 'да (da)', english_word = 'yes')
-card1.save()
-
 # IPython.embed()
