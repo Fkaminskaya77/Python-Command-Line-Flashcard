@@ -150,11 +150,11 @@ card48.save()
 card49 = FlashCard(russian_word = 'обещать (ob-esh-ch-a-t)', english_word = 'to promise')
 card49.save()
 
-card50 = FlashCard(russian_word = 'получать (poluchat)', english_word = 'to receive')
+card50 = FlashCard(russian_word = 'получать (po-lu-ch-at)', english_word = 'to receive')
 card50.save()
 
 card50 = FlashCard(russian_word = 'называть (na-zyv-a-t)', english_word = 'to name')
 card50.save()
 
-card50 = FlashCard(russian_word = 'вести (vesti)', english_word = 'to lead')
+card50 = FlashCard(russian_word = 'вести (ve-st-i)', english_word = 'to lead')
 card50.save()
