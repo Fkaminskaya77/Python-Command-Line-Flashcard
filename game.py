@@ -43,7 +43,7 @@ while True:
     if choice == "1":
          add_card()
     elif choice == "2":
-        num_cards = int(input("Enter the number of flash cards to review: "))
+        num_cards = int(input("Enter the number of flash cards you would like to review: "))
         study(num_cards)
     elif choice == "3":
         print("Thanks for studying the russian language flash cards!")
