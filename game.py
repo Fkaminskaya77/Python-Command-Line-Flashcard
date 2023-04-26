@@ -58,6 +58,11 @@ while True:
     elif choice == "2":
         num_cards = int(input("Enter the number of flash cards you would like to review: "))
         study(num_cards)
+        
+        play_again = input("Would you like to play again? Yes (y) or No (n): ")
+        
+        if play_again.lower() == "n":
+                break
     elif choice == "3":
         print("Thanks for studying the russian language flash cards!")
         break
