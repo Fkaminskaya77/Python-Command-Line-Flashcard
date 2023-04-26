@@ -43,6 +43,8 @@ def study(num_cards):
             print(f"Incorrect. The correct answer is '{back}'.")
             incorrect += 1
         
+        print("Score: correct =", correct, " incorrect =", incorrect, "\n")
+        
         flashcard.save()
       
 while True:
