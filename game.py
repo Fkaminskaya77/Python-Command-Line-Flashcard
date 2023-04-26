@@ -1,11 +1,12 @@
 import random
 from models import FlashCard
-from seed import FlashCard
+from seed import FlashCard 
 
 def add_card():
     russian_word = input("Enter the Russian word: ")
     english_word = input("Enter the English word: ")
-    card = FlashCard(russian_word=russian_word, english_word=english_word)
+    hint = input("Enter a hint: ")
+    card = FlashCard(russian_word=russian_word, english_word=english_word, hint=hint)
     card.save()
     print("Card added successfully!")
 
@@ -20,8 +21,18 @@ def study(num_cards):
         flashcard = flashcards[i]
         front = flashcard.russian_word
         back = flashcard.english_word
+        hint = flashcard.hint
+       
         print(f"\nCard {i + 1} of {num_cards}:")
         print(f"Front: {front}")
+        
+        show_hint = input("Would you like a hint? (yes/no) ")
+        if show_hint.lower() == "yes":  
+            if hint is not None:
+                print(f"Hint: {hint}") 
+            else:
+                print("Sorry, no hint available for this card.")
+        
         
         user_input = input("Back: ")
         

@@ -1,7 +1,7 @@
 from peewee import *
-# import IPython
 
-# Create DB connection
+
+
 db = PostgresqlDatabase(
 'flashcards2',
 user='', 
@@ -12,7 +12,7 @@ port=5432
 
 db.connect()
 
-#models
+
 class BaseModel(Model):
     class Meta:
         database = db
@@ -20,5 +20,5 @@ class BaseModel(Model):
 class FlashCard(BaseModel):
     russian_word = CharField()
     english_word= CharField()
+    hint = CharField(null=True)
 
-# IPython.embed()

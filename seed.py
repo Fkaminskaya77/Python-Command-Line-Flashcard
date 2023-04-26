@@ -1,12 +1,12 @@
 from models import db, FlashCard
 
-# Creating Tables for database
+
 db.drop_tables([FlashCard])
 db.create_tables([FlashCard])
 
 
-# Seed the database with data
 card1 = FlashCard(russian_word = 'да (da)', english_word = 'yes')
+card1.hint = "It's a postive answer in Russian",
 card1.save()
 
 card3 = FlashCard(russian_word = 'нет (net)', english_word = 'no')
