@@ -2,7 +2,9 @@
 
 This is a flash card CLI application made with Python and PostgreSQL. The flash cards are based on the topic of learning or studying a language. In this case you are given different russian verbs and need to be able to translate them to English. 
 
-When the application is ran you will be giving a main menu where you can decide what you would like to do. The application gives you the option to study the flashcards or to create a new card. As shown below.
+When the application is ran you will be giving a main menu where you can decide what you would like to do. The application gives you the option to study the flashcards or to create a new card. As shown below in the image.
+
+ There is also a feature that will ask if you want a hint, just in case you get stuck on remembering a flashcard detail.
 
 ![Imgur](https://i.imgur.com/30ddKOw.png)
 
