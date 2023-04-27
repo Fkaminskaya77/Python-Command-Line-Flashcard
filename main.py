@@ -32,7 +32,10 @@ def study(num_cards):
                 print(f"Hint: {hint}") 
             else:
                 print("Sorry, no hint available for this card.")
-        
+        elif show_hint.lower() == "no":
+            pass
+        else:
+            print("Invalid input. Please enter 'yes' or 'no'.")
         
         user_input = input("Back: ")
         
@@ -49,6 +52,7 @@ def study(num_cards):
       
 while True:
     print("\nMenu:")
+    print("NOTE: ALL WORDS ARE VERBS BESIDES THREE NOTECARDS. MAKE SURE TO ANSWER LIKE THIS, EXAMPLE: TO PLAY, TO EAT")
     print("1. Add new card")
     print("2. Start practice or study session")
     print("3. Quit")
